@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HarmonyHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#008577</item>
+        <item name="colorPrimaryVariant">#00574B</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#449E77</item>
+        <item name="colorSecondaryVariant">#059558</item>
+        <item name="colorOnSecondary">#030404</item>
+
+        <item name="background">@color/colorBeige</item>
+
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.HarmonyHub" parent="Base.Theme.HarmonyHub" />
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HarmonyHub</string>
+    <string name="logo_Image">logo</string>
+    <string name="select_date">Select Date</string>
+    <string name="what_mood_are_you_in_click_the_corresponding_button"> \  Choose your current mood below!</string>
+    <string name="happy">😊 Happy</string>
+    <string name="sad">😢 Sad</string>
+    <string name="angry">😡 Angry</string>
+    <string name="annoyed">😤 Annoyed</string>
+    <string name="nervous">😬 Nervous</string>
+    <string name="calm">😌 Calm</string>
+    <string name="enter_meal_name">Enter a food</string>
+    <string name="enter_calorie_intake">Enter calorie count</string>
+    <string name="save_meal">Save Entry</string>
+    <string name="medication_type">Medication Type</string>
+    <string name="dosage">Dosage</string>
+    <string name="save_medication">Save Entry</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="back">back</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:padding="16dp"
+    tools:context=".HistoryActivity">
+
+    <!-- ImageView taking up 20% of the height at the top -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:contentDescription="@string/logo_Image"
+        android:src="@drawable/logo" />
+
+    <!-- MaterialToolbar for displaying the title -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/imageView"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="History"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- MaterialButton for selecting date -->
+
+    <!-- Added ScrollView to make the layout scrollable -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:text="Select Date"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@drawable/ic_calendar"
+        app:iconTint="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_select_date"
+        android:padding="16dp">
+
+        <!-- LinearLayout to hold the TextViews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <!-- TextViews for displaying different types of history -->
+            <TextView
+                android:id="@+id/text_selected_date"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/text_meal_header"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEAL HISTORY"
+                android:textStyle="bold"/>
+            <!-- TextViews for displaying different types of history -->
+            <TextView
+                android:id="@+id/text_meal_history"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meal History:"
+                android:clickable="true"
+                android:focusable="true"
+                app:drawableEndCompat="@drawable/ic_delete"/>
+
+            <TextView
+                android:id="@+id/text_medication_header"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEDICATION HISTORY"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text_medication_history"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/ic_delete"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Medication History" />
+
+
+            <TextView
+                android:id="@+id/text_mood_header"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOOD HISTORY"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text_mood_history"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/ic_delete"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Mood History" />
+
+            <TextView
+                android:id="@+id/text_hydration_header"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HYDRATION HISTORY"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text_hydration_history"
+                style="@style/HistoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableEndCompat="@drawable/ic_delete"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Hydration History" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
